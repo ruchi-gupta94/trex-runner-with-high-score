@@ -91,9 +91,7 @@ function draw() {
       checkpoint.play();
     }
      
-  if(highscore<score){
-    highscore = score;
-  }
+  
   
     ground.velocityX = -(6 + 3*score/100);
   
@@ -139,6 +137,10 @@ function draw() {
      
       reset();
     }
+    
+    if(highscore<score){
+    highscore = score;
+  }
   }
   
   
